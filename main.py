@@ -51,7 +51,7 @@ def is_shorten_link(token, url):
 
 def main():
     load_dotenv()
-    token = os.environ['VK_API']
+    token = os.environ['VK_API_TOKEN']
     parser = argparse.ArgumentParser(description="Получить информацию по укороченной ссылке или укоротить ссылку.")
     parser.add_argument("url", help="Введите ссылку.")
     args = parser.parse_args()
